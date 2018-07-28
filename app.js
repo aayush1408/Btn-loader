@@ -9,5 +9,10 @@
         var tempDiv = document.createElement('div')
         tempDiv.classList.add('loader')
         this.insertAdjacentElement('beforebegin', tempDiv);
+        var that = this
+        setTimeout(function () {
+            that.style.display = 'inline'
+            tempDiv.style.display = 'None'
+        }, 2000);
     }
 })()
