@@ -41,7 +41,7 @@
 ```
 This will generate a default loader, to modify the default loader use the given below attributes.
 
-### Other cool Attributes
+### Cool Attributes
 
 >Vary the timer of the loader using ```timer```
 
@@ -59,7 +59,7 @@ It keeps running the loader for 3 seconds.
    <div class="btn-loader" size="xl">Button</div>
 </div>
 ```
-btn-loader has 4 sizes available
+btn-loader provides 4 sizes,
 ```xl```
 ```lg```
 ```md```
