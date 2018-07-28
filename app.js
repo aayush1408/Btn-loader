@@ -11,9 +11,11 @@
         var timer = this.getAttribute('timer') || 60
         var size = this.getAttribute('size')
         var thickness = this.getAttribute('thickness')
-        var colorOfLoader = this.getAttribute('color-head')
+        var headOfLoader = this.getAttribute('color-head')
         var bckOfLoader = this.getAttribute('bck-color')
-
+        var bottomOfLoader = this.getAttribute('color-bottom')
+        var rightOfLoader = this.getAttribute('color-right')
+        var leftOfLoader = this.getAttribute('color-left')
         this.style.display = 'None'
 
         var tempDiv = document.createElement('div')
@@ -28,6 +30,9 @@
         else if (size === 'lg') {
             tempDiv.classList.add('lg-loader')
         }
+        else if (size === 'xl') {
+            tempDiv.classList.add('xl-loader')
+        }
 
         if (thickness) {
             tempDiv.style.borderWidth = thickness.toString() + 'px';
@@ -38,8 +43,20 @@
             tempDiv.style.borderColor = bckOfLoader.toString()
         }
 
-        if (colorOfLoader) {
-            tempDiv.style.borderTopColor = colorOfLoader.toString()
+        if (headOfLoader) {
+            tempDiv.style.borderTopColor = headOfLoader.toString()
+        }
+
+        if (bottomOfLoader) {
+            tempDiv.style.borderBottomColor = bottomOfLoader.toString()
+        }
+
+        if (rightOfLoader) {
+            tempDiv.style.borderRightColor = rightOfLoader.toString()
+        }
+
+        if (leftOfLoader) {
+            tempDiv.style.borderLeftColor = leftOfLoader.toString()
         }
 
         this.insertAdjacentElement('beforebegin', tempDiv);
