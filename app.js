@@ -5,6 +5,8 @@
         element.addEventListener('click', handleClick)
     })
     function handleClick(event) {
+        var timer = this.getAttribute('timer')
+        console.log(timer)
         this.style.display = 'None'
         var tempDiv = document.createElement('div')
         tempDiv.classList.add('loader')
@@ -13,6 +15,6 @@
         setTimeout(function () {
             that.style.display = 'inline'
             tempDiv.style.display = 'None'
-        }, 2000);
+        }, timer * 1000);
     }
 })()
