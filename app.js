@@ -17,6 +17,7 @@
 		var rightOfLoader = this.getAttribute('color-right')
 		var leftOfLoader = this.getAttribute('color-left')
 		var textAfter = this.getAttribute('text-after')
+		var hideAfter = this.getAttribute('hide-after') ? true : false
 
 		this.style.display = 'None'
 
@@ -69,7 +70,12 @@
 				that.style.display = 'inline'
 				that.innerHTML = textAfter.toString()
 			}
-			that.style.display = 'inline'
+			if (hideAfter) {
+				that.style.display = 'None'
+			}
+			else {
+				that.style.display = 'inline'
+			}
 			tempDiv.style.display = 'None'
 		}, timer * 1000);
 	}
