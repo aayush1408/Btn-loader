@@ -39,7 +39,7 @@
    <div class="btn-loader">Button</div>
 </div>
 ```
-This will generate a default loader with fixed dimmensions and colors.
+This will not generate the loader as dimmensions are required, which can be provided using size and thickness attributes.
 
 ### Other cool Attributes
 
