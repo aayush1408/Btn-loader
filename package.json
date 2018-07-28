@@ -1,6 +1,6 @@
 {
   "name": "btn-loader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A javascript library for handling button loading in a beautiful way",
   "main": "dist/app.js",
   "scripts": {
@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/aayush1408/Btn-loader/issues"
   },
-  "homepage": "https://github.com/aayush1408/Btn-loader#readme",
+  "homepage": "https://github.com/aayush1408/Btn-loader/blob/master/#readme",
   "dependencies": {
   }
 }
