@@ -7,13 +7,17 @@
     })
 
     function handleClick(event) {
+
         var timer = this.getAttribute('timer')
         var size = this.getAttribute('size')
         var thickness = this.getAttribute('thickness')
-        console.log(thickness)
+        var colorOfLoader = this.getAttribute('color-head')
+
         this.style.display = 'None'
+
         var tempDiv = document.createElement('div')
         tempDiv.classList.add('loader')
+
         if (size === 'sm') {
             tempDiv.classList.add('sm-loader')
         }
@@ -23,9 +27,18 @@
         else if (size === 'lg') {
             tempDiv.classList.add('lg-loader')
         }
-        tempDiv.style.borderWidth = thickness.toString() + 'px';
-        tempDiv.style.borderTopWidth = thickness.toString() + 'px';
+
+        if (thickness) {
+            tempDiv.style.borderWidth = thickness.toString() + 'px';
+            tempDiv.style.borderTopWidth = thickness.toString() + 'px';
+        }
+
+        if (colorOfLoader) {
+            tempDiv.style.borderTopColor = colorOfLoader.toString()
+        }
+
         this.insertAdjacentElement('beforebegin', tempDiv);
+
         var that = this
         setTimeout(function () {
             that.style.display = 'inline'
