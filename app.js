@@ -9,8 +9,8 @@
     function handleClick(event) {
         var timer = this.getAttribute('timer')
         var size = this.getAttribute('size')
-        console.log(size)
-        console.log(timer)
+        var thickness = this.getAttribute('thickness')
+        console.log(thickness)
         this.style.display = 'None'
         var tempDiv = document.createElement('div')
         tempDiv.classList.add('loader')
@@ -23,6 +23,8 @@
         else if (size === 'lg') {
             tempDiv.classList.add('lg-loader')
         }
+        tempDiv.style.borderWidth = thickness.toString() + 'px';
+        tempDiv.style.borderTopWidth = thickness.toString() + 'px';
         this.insertAdjacentElement('beforebegin', tempDiv);
         var that = this
         setTimeout(function () {
