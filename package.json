@@ -1,8 +1,8 @@
 {
   "name": "btn-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A javascript library for handling button loading in a beautiful way",
-  "main": "app.js",
+  "main": "dist/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -26,8 +26,5 @@
   },
   "homepage": "https://github.com/aayush1408/Btn-loader#readme",
   "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-uglifycss": "^1.1.0",
-    "gulp-uglifyjs": "^0.6.2"
   }
 }
