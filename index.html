@@ -4,15 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="dist/app.css">
-    <script src="dist/app.js" async></script>    
+    <link rel="stylesheet" type="text/css" href="style.css">    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/btn-loader@1.0.1/dist/app.css">
+    <script src="https://unpkg.com/btn-loader@1.0.1/dist/app.js" async></script>
     <title>Javascript Library</title>
 </head>
 <body>
-    <div>
-        <button class="btn-loader" timer="2" size="lg" thickness="16" color-head="green" color-bottom="orange" color-left="pink" text-after="Done" hide-after="true">Button</button>
-        <button class="btn-loader" timer="3" size="xl" thickness="15" color-head=" #FF69B4" bck-color="grey">Button</button>
-        <button class="btn-loader" timer="4" size="md" thickness="14" color-head="rgba(255, 223, 80, 0.925)" bck-color="black">Button</button>                
+    <div class="header">
+        <h1>Examples</h1>
+    </div><br>
+    <div class="container"> 
+    <div class="row">
+        <div class="col-md-4 col-lg-4 col-sm-12">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">4 Color Super Loader</h5>
+                <p class="card-text">Add 4 different color to your loaders.</p>
+                <button class="btn-loader btn-primary" timer="4" size="xl" thickness="16" color-head="#E4DBBF" color-bottom="#DC5B21" color-left="#70AB8F" color-right="#383127" text-after="Done">Button</button>                
+            </div>
+        </div>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sm-12">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">3 Color Super Loader</h5>
+                <p class="card-text">Add 3 different color to your loaders.</p>
+                <button class="btn-loader btn-primary" timer="4" size="xl" thickness="16" color-head="#E9E9E9" color-bottom="#4EB1BA" color-left="#222930" text-after="Done">Button</button>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sm-12">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">2 Color Super Loader</h5>
+                <p class="card-text">Add 2 different color to your loaders.</p>
+                <button class="btn-loader btn-primary" timer="4" size="xl" thickness="16" color-head="#E9C92D" color-bottom="#FFD500" text-after="Done">Button</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-4 col-lg-4 col-sm-12">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Simple Loader</h5>
+                    <p class="card-text">We also have simple loaders for our developers.</p>
+                    <button class="btn-loader btn-primary" timer="2" size="xl" thickness="18" color-head="#ffa500" text-after="Done">Button</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sm-12">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Small size Loader</h5>
+                    <p class="card-text">Vary the size of your loaders and also the thickness.</p>
+                    <button class="btn-loader btn-primary" timer="3" size="md" thickness="12" color-head="pink" text-after="Done">Button</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sm-12">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Remove button</h5>
+                    <p class="card-text">Remove the button after loader does its works.</p>
+                    <button class="btn-loader btn-primary" timer="3" size="lg" thickness="13" color-head="green" hide-after="true">Button</button>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 </body>
 </html>
