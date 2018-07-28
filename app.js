@@ -8,10 +8,11 @@
 
     function handleClick(event) {
 
-        var timer = this.getAttribute('timer')
+        var timer = this.getAttribute('timer') || 60
         var size = this.getAttribute('size')
         var thickness = this.getAttribute('thickness')
         var colorOfLoader = this.getAttribute('color-head')
+        var bckOfLoader = this.getAttribute('bck-color')
 
         this.style.display = 'None'
 
@@ -31,6 +32,10 @@
         if (thickness) {
             tempDiv.style.borderWidth = thickness.toString() + 'px';
             tempDiv.style.borderTopWidth = thickness.toString() + 'px';
+        }
+
+        if (bckOfLoader) {
+            tempDiv.style.borderColor = bckOfLoader.toString()
         }
 
         if (colorOfLoader) {

@@ -1,6 +1,6 @@
 .loader{
     border:solid #f3f3f3;
-    border-top:solid #3498db; /* Blue */
+    border-top:solid #3db; /* Blue */
     border-radius: 50%;
     animation: spin 2s linear infinite;
 }
