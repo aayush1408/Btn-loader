@@ -97,6 +97,15 @@ After loading, the value changes to 'Done'.
 It changes the color and btn-loader works with all color codes.
 
 
+>Change the background color of the loader using ```bck-color```
+
+```html
+<div>
+   <div class="btn-loader" bck-color="#E9C92D">Hex-Button</div>
+</div>
+```
+It changes the background color and btn-loader works with all color codes.
+
 >Remove the button after loading using ```hide-after```
 
 ```html
