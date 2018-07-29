@@ -1,6 +1,6 @@
 ## Btn-loader
 
->Btn-loader is used to make beautiful loaders according to the user's needs in the simplest possible manner.
+>Btn-loader is used to make beautiful loaders according to the user's needs in the simplest possible manner. Check out the example here <a href="http://btn-loader.surge.sh" target="_blank">Btn-loader</a>.
 
 [![npm](https://img.shields.io/npm/dm/btn-loader.svg?style=flat-square)](https://www.npmjs.com/package/btn-loader)
 [![npm](https://img.shields.io/npm/v/btn-loader.svg?style=flat-square)](https://www.npmjs.com/package/btn-loader)
