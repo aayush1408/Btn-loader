@@ -16,8 +16,8 @@
 
 1) By CDN
 ```html
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/btn-loader@1.0.1/dist/app.css">
-<script src="https://unpkg.com/btn-loader@1.0.1/dist/app.js" async></script>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/btn-loader@1.0.2/dist/app.css">
+<script src="https://unpkg.com/btn-loader@1.0.2/dist/app.js" async></script>
 ```
 
 1) By downloading the package
@@ -39,9 +39,9 @@
    <div class="btn-loader">Button</div>
 </div>
 ```
-This will not generate the loader as dimmensions are required, which can be provided using size and thickness attributes.
+This will generate a default loader, to modify the default loader use the given below attributes.
 
-### Other cool Attributes
+### Cool Attributes
 
 >Vary the timer of the loader using ```timer```
 
@@ -59,7 +59,7 @@ It keeps running the loader for 3 seconds.
    <div class="btn-loader" size="xl">Button</div>
 </div>
 ```
-btn-loader has 4 sizes available
+btn-loader provides 4 sizes,
 ```xl```
 ```lg```
 ```md```
