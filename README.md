@@ -1,6 +1,6 @@
 ## Btn-loader
 
->Btn-loader is used to make beautiful loaders according to the user's needs in the simplest possible manner.
+>Btn-loader is used to make beautiful loaders according to the user's needs in the simplest possible manner. Check out the example here <a href="http://btn-loader.surge.sh" target="_blank">Btn-loader</a>.
 
 [![npm](https://img.shields.io/npm/dm/btn-loader.svg?style=flat-square)](https://www.npmjs.com/package/btn-loader)
 [![npm](https://img.shields.io/npm/v/btn-loader.svg?style=flat-square)](https://www.npmjs.com/package/btn-loader)
@@ -36,7 +36,7 @@
 
 ```html
 <div>
-   <div class="btn-loader">Button</div>
+   <button class="btn-loader">Button</button>
 </div>
 ```
 This will generate a default loader, to modify the default loader use the given below attributes.
@@ -47,7 +47,7 @@ This will generate a default loader, to modify the default loader use the given 
 
 ```html
 <div>
-   <div class="btn-loader" timer="3">Button</div>
+   <button class="btn-loader" timer="3">Button</button>
 </div>
 ```
 It keeps running the loader for 3 seconds.
@@ -56,7 +56,7 @@ It keeps running the loader for 3 seconds.
 
 ```html
 <div>
-   <div class="btn-loader" size="xl">Button</div>
+   <button class="btn-loader" size="xl">Button</button>
 </div>
 ```
 btn-loader provides 4 sizes,
@@ -69,7 +69,7 @@ btn-loader provides 4 sizes,
 
 ```html
 <div>
-   <div class="btn-loader" thickness="14">Button</div>
+   <button class="btn-loader" thickness="14">Button</button>
 </div>
 ```
 It increases the thickness of the loader by 14 pixels.
@@ -79,7 +79,7 @@ It increases the thickness of the loader by 14 pixels.
 
 ```html
 <div>
-   <div class="btn-loader" text-after="Done">Button</div>
+   <button class="btn-loader" text-after="Done">Button</button>
 </div>
 ```
 After loading, the value changes to 'Done'.
@@ -89,19 +89,28 @@ After loading, the value changes to 'Done'.
 
 ```html
 <div>
-   <div class="btn-loader" color-head="#E9C92D">Hex-Button</div>
-   <div class="btn-loader" color-head="rgb('1.4','2.3','2')">Rgb-Button</div>
-   <div class="btn-loader" color-head="green">Button</div>
+   <button class="btn-loader" color-head="#E9C92D">Hex-Button</button>
+   <button class="btn-loader" color-head="rgb('1.4','2.3','2')">Rgb-Button</button>
+   <button class="btn-loader" color-head="green">Button</button>
 </div>
 ```
 It changes the color and btn-loader works with all color codes.
 
 
+>Change the background color of the loader using ```bck-color```
+
+```html
+<div>
+   <button class="btn-loader" bck-color="#E9C92D">Hex-Button</button>
+</div>
+```
+It changes the background color and btn-loader works with all color codes.
+
 >Remove the button after loading using ```hide-after```
 
 ```html
 <div>
-   <div class="btn-loader" color-head="#E9C92D" hide-after="true">Button</div>
+   <button class="btn-loader" color-head="#E9C92D" hide-after="true">Button</button>
 </div>
 ```
 It hides the button after the loader completes.
