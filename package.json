@@ -1,7 +1,7 @@
 {
   "name": "btn-loader",
-  "version": "1.0.3",
-  "description": "A javascript library for handling button loading in a beautiful way",
+  "version": "1.0.5",
+  "description": "A javascript library for handling button loading in a beautiful and clean way.",
   "main": "dist/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

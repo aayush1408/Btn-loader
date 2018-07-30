@@ -1,14 +1,16 @@
 ## Btn-loader
 
->Btn-loader is used to make beautiful loaders according to the user's needs in the simplest possible manner. Check out the example here <a href="http://btn-loader.surge.sh" target="_blank">Btn-loader</a>.
+>Btn-loader is used to make beautiful and customizable loaders according to the user's needs in the simplest possible manner. Check out the example here <a href="http://btn-loader.surge.sh" target="_blank">Btn-loader</a>.
 
 [![npm](https://img.shields.io/npm/dm/btn-loader.svg?style=flat-square)](https://www.npmjs.com/package/btn-loader)
 [![npm](https://img.shields.io/npm/v/btn-loader.svg?style=flat-square)](https://www.npmjs.com/package/btn-loader)
 
+>Check out the source code <a href="https://github.com/aayush1408/Btn-loader" target="_blank">here</a>, and feel free to contribute. 
+
 - implemented with css. No canvas, png or jpg sprites messing around.
 - less than 2KB when minified.
 - optimised and production ready code in dist/ folder. 
-- CDN provided at [unpkg](https://unpkg.com/btn-loader@1.0.1/dist/)
+- CDN provided at [unpkg](https://unpkg.com/btn-loader@1.0.5/dist/)
 - no extra dependency used 
 - Cross browser functionality
 
@@ -16,8 +18,8 @@
 
 1) By CDN
 ```html
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/btn-loader@1.0.2/dist/app.css">
-<script src="https://unpkg.com/btn-loader@1.0.2/dist/app.js" async></script>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/btn-loader@1.0.5/dist/app.css">
+<script src="https://unpkg.com/btn-loader@1.0.5/dist/app.js" async></script>
 ```
 
 1) By downloading the package
@@ -39,7 +41,7 @@
    <button class="btn-loader">Button</button>
 </div>
 ```
-This will generate a default loader, to modify the default loader use the given below attributes.
+This will generate a default loader, to modify the default loader use the attributes given below.
 
 ### Cool Attributes
 
