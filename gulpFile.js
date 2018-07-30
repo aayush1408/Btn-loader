@@ -1,15 +1,15 @@
-const gulp = require('gulp');
-var uglify = require('gulp-uglifyjs');
-var uglifycss = require('gulp-uglifycss');
+const gulp = require("gulp");
+var uglify = require("gulp-uglifyjs");
+var uglifycss = require("gulp-uglifycss");
 
 gulp.task('uglify', function () {
-    gulp.src('./assets/*.js')
+    gulp.src("./assets/*.js")
         .pipe(uglify())
         .pipe(gulp.dest('./dist/'))
 });
 
 gulp.task('css', function () {
-    gulp.src('./assets/*.css')
+    gulp.src("./assets/*.css")
         .pipe(uglifycss({
             "uglyComments": true
         }))
