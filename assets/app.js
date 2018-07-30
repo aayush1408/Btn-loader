@@ -8,42 +8,42 @@
 
 	function handleClick(event) {
 		// Getting the attributes
-		var timer = this.getAttribute('timer') || 60;
-		var size = this.getAttribute('size');
-		var thickness = this.getAttribute('thickness');
-		var headOfLoader = this.getAttribute('color-head');
-		var bckOfLoader = this.getAttribute('bck-color');
-		var bottomOfLoader = this.getAttribute('color-bottom');
-		var rightOfLoader = this.getAttribute('color-right');
-		var leftOfLoader = this.getAttribute('color-left');
-		var textAfter = this.getAttribute('text-after');
-		var hideAfter = this.getAttribute('hide-after') ? true : false;
+		var timer = this.getAttribute("timer") || 60;
+		var size = this.getAttribute("size");
+		var thickness = this.getAttribute("thickness");
+		var headOfLoader = this.getAttribute("color-head");
+		var bckOfLoader = this.getAttribute("bck-color");
+		var bottomOfLoader = this.getAttribute("color-bottom");
+		var rightOfLoader = this.getAttribute("color-right");
+		var leftOfLoader = this.getAttribute("color-left");
+		var textAfter = this.getAttribute("text-after");
+		var hideAfter = this.getAttribute("hide-after") ? true : false;
 
 		// Hiding the current button
 		this.style.display = "None";
 
 		// create another div for the loader
-		var tempDiv = document.createElement('div');
-		tempDiv.classList.add('loader');
+		var tempDiv = document.createElement("div");
+		tempDiv.classList.add("loader");
 
 		// Handling the size of the loader
 		if (size === "sm") {
-			tempDiv.classList.add('sm-loader');
+			tempDiv.classList.add("sm-loader");
 		}
 		else if (size === "md") {
-			tempDiv.classList.add('md-loader');
+			tempDiv.classList.add("md-loader");
 		}
 		else if (size === "lg") {
-			tempDiv.classList.add('lg-loader');
+			tempDiv.classList.add("lg-loader");
 		}
 		else if (size === "xl") {
-			tempDiv.classList.add('xl-loader');
+			tempDiv.classList.add("xl-loader");
 		}
 
 		// Handling the thickness
 		if (thickness) {
-			tempDiv.style.borderWidth = thickness.toString() + 'px';
-			tempDiv.style.borderTopWidth = thickness.toString() + 'px';
+			tempDiv.style.borderWidth = thickness.toString() + "px";
+			tempDiv.style.borderTopWidth = thickness.toString() + "px";
 		}
 
 		//Handling the background color and loader color
@@ -68,9 +68,9 @@
 			tempDiv.style.borderLeftColor = leftOfLoader.toString();
 		}
 
-		this.insertAdjacentElement('beforebegin', tempDiv);
+		this.insertAdjacentElement("beforebegin", tempDiv);
 
-		var that = this
+		var that = this;
 		setTimeout(function () {
 			if (textAfter) {
 				that.style.display = "inline";
