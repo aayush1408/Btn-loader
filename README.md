@@ -4,6 +4,7 @@
 
 [![npm](https://img.shields.io/npm/dm/btn-loader.svg?style=flat-square)](https://www.npmjs.com/package/btn-loader)
 [![npm](https://img.shields.io/npm/v/btn-loader.svg?style=flat-square)](https://www.npmjs.com/package/btn-loader)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/de2c783f79a041ebaa0b2f6d8edb891a)](https://www.codacy.com/app/aayush1408/Btn-loader?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=aayush1408/Btn-loader&amp;utm_campaign=Badge_Grade)
 
 >Check out the source code <a href="https://github.com/aayush1408/Btn-loader" target="_blank">here</a>, and feel free to contribute. 
 
