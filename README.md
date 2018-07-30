@@ -10,7 +10,7 @@
 - implemented with css. No canvas, png or jpg sprites messing around.
 - less than 2KB when minified.
 - optimised and production ready code in dist/ folder. 
-- CDN provided at [unpkg](https://unpkg.com/btn-loader@1.0.5/dist/)
+- CDN provided at [unpkg](https://unpkg.com/btn-loader@1.0.3/dist/)
 - no extra dependency used 
 - Cross browser functionality
 
@@ -18,8 +18,8 @@
 
 1) By CDN
 ```html
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/btn-loader@1.0.5/dist/app.css">
-<script src="https://unpkg.com/btn-loader@1.0.5/dist/app.js" async></script>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/btn-loader@1.0.3/dist/app.css">
+<script src="https://unpkg.com/btn-loader@1.0.3/dist/app.js" async></script>
 ```
 
 1) By downloading the package
