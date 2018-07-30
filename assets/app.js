@@ -1,5 +1,5 @@
 (function () {
-
+	// Getting all the elements with `btn-loader` class
 	var getButton = document.getElementsByClassName('btn-loader') || []
 	var elementArray = [].slice.call(getButton)
 	elementArray.forEach(function (element) {
@@ -7,7 +7,7 @@
 	})
 
 	function handleClick(event) {
-
+		// Getting the attributes
 		var timer = this.getAttribute('timer') || 60
 		var size = this.getAttribute('size')
 		var thickness = this.getAttribute('thickness')
@@ -19,11 +19,14 @@
 		var textAfter = this.getAttribute('text-after')
 		var hideAfter = this.getAttribute('hide-after') ? true : false
 
+		// Hiding the current button
 		this.style.display = 'None'
 
+		// create another div for the loader
 		var tempDiv = document.createElement('div')
 		tempDiv.classList.add('loader')
 
+		// Handling the size of the loader
 		if (size === 'sm') {
 			tempDiv.classList.add('sm-loader')
 		}
@@ -37,10 +40,13 @@
 			tempDiv.classList.add('xl-loader')
 		}
 
+		// Handling the thickness
 		if (thickness) {
 			tempDiv.style.borderWidth = thickness.toString() + 'px'
 			tempDiv.style.borderTopWidth = thickness.toString() + 'px'
 		}
+
+		//Handling the background color and loader color
 
 		if (bckOfLoader) {
 			tempDiv.style.borderColor = bckOfLoader.toString()
